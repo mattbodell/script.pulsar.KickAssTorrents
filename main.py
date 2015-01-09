@@ -1,7 +1,7 @@
 from pulsar import provider
 
 def search(query):
-	resp = provider.GET("http://kickass.to/usearch", params={
+	resp = provider.GET("http://kat.tf/usearch", params={
 		"q": query,
 	})
 	return provider.extract_magnets(resp.data)
